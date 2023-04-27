@@ -1,0 +1,44 @@
+﻿@model Carros.Models.ConsumoCombustivel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Editar</h1>
+
+<h4>Consumo Combustivel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NumeroDeSerie" />
+            <div class="form-group">
+                <label asp-for="Capacidade" class="control-label"></label>
+                <input asp-for="Capacidade" class="form-control" />
+                <span asp-validation-for="Capacidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Portador" class="control-label"></label>
+                <input asp-for="Portador" class="form-control" />
+                <span asp-validation-for="Portador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CombustivelAtual" class="control-label"></label>
+                <input asp-for="CombustivelAtual" class="form-control" disabled/>
+                <span asp-validation-for="CombustivelAtual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

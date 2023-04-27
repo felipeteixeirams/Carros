@@ -1,0 +1,76 @@
+﻿@model Carros.Models.ConsumoCombustivel
+
+@{
+    ViewData["Title"] = "Create3";
+}
+
+<h1>Cadastrar 3 carros</h1>
+
+<h4>Informe os dados de consumo de combustível</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h2>Primeiro Veículo</h2>
+            <div class="form-group">
+                <label asp-for="Capacidade" class="control-label"></label>
+                <input asp-for="Capacidade" class="form-control" value="50" placeholder="50" disabled />
+                <span asp-validation-for="Capacidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Portador" class="control-label"></label>
+                <input asp-for="Portador" class="form-control" />
+                <span asp-validation-for="Portador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CombustivelAtual" class="control-label"></label>
+                <input asp-for="CombustivelAtual" min="0" max="40" step="1" class="form-control" value="0" disabled />
+                <span asp-validation-for="CombustivelAtual" class="text-danger"></span>
+            </div>
+            <h2>Segundo Veículo</h2>
+            <div class="form-group">
+                <label asp-for="Capacidade" class="control-label"></label>
+                <input asp-for="Capacidade" type="number" value="55" class="form-control" placeholder="55" disabled />
+                <span asp-validation-for="Capacidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Portador" class="control-label"></label>
+                <input asp-for="Portador" class="form-control" />
+                <span asp-validation-for="Portador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CombustivelAtual" class="control-label"></label>
+                <input asp-for="CombustivelAtual" min="0" max="40" step="1" class="form-control" value="0" disabled />
+                <span asp-validation-for="CombustivelAtual" class="text-danger"></span>
+            </div>
+            <h2>Terceiro Veículo</h2>
+            <div class="form-group">
+                <label asp-for="Capacidade" class="control-label"></label>
+                <input asp-for="Capacidade" value="40" placeholder="40" class="form-control" />
+                <span asp-validation-for="Capacidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Portador" class="control-label"></label>
+                <input asp-for="Portador" class="form-control" />
+                <span asp-validation-for="Portador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CombustivelAtual" class="control-label"></label>
+                <input asp-for="CombustivelAtual" min="0" max="40" step="1" class="form-control" value="0" disabled />
+                <span asp-validation-for="CombustivelAtual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
