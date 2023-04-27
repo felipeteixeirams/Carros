@@ -1,6 +1,6 @@
 #Desafio Consumo de Combustivel
 
-<p><img src="/Extras/Animation.gif" width="550px/></p>
+<p><img src="/Extras/Animation.gif" width="550px" /></p>
     
 <h2> 1° -  Crie uma classe chamada Consumo Combustível, com: ✔️</h2>
 <p><strong>Propriedades</strong></p>
