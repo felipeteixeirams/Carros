@@ -29,4 +29,13 @@
     <li>Excluir ✔️</li>
 </ul>
 
+<h2> Tecnologias utilizadas: </h2> 
+<ul>
+    <liLinguagem C#</li>
+    <li>ASP.NET Core MVC</li>
+    <li>SQL Server</li>
+    <li>ORM Entity framework</li>
+    <li>HTML, Razor, Bootstrap</li>
+</ul>
+
 <dd><em>Criado por: <a target="_blank" href="https://www.linkedin.com/in/felipeteixeirams">Felipe</a> 👨‍💻</em><dd>
