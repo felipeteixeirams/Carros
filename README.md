@@ -1,6 +1,7 @@
 #Desafio Consumo de Combustivel
 
-<p><img src="/Extras/Animation.gif" width="450px/></p>
+<p><img src="/Extras/Animation.gif" width="550px/></p>
+    
 <h2> 1° -  Crie uma classe chamada Consumo Combustível, com: ✔️</h2>
 <p><strong>Propriedades</strong></p>
 <ul>
@@ -27,19 +28,5 @@
     <li>Alterar ✔️</li>
     <li>Excluir ✔️</li>
 </ul>
-
-<h2>Preview</h2>
-
-<p><strong>Inicio - Lista Todos Os Registros</strong></p>
-<img src="/Extras/1.jpg" width="300px/>
-
-<p><strong>Create - Tela de Novo Registro</strong></p>
-<img src="/Extras/2.jpg" width="300px/>
-
-<p><strong>Update - Tela de Visualização / Atualização</strong></p>
-<img src="/Extras/3.jpg" width="300px/>
-
-<p><strong>Delete - Tela Para Exclusão de Registro</strong></p>
-<img src="/Extras/4.jpg" width="300px/>
 
 <dd><em>Criado por: <a target="_blank" href="https://www.linkedin.com/in/felipeteixeirams">Felipe</a> 👨‍💻</em><dd>
