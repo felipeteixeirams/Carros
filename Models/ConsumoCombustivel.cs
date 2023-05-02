@@ -27,6 +27,37 @@ namespace Carros.Models
         [Required(ErrorMessage = "Campo Obrigatrio")]
         public int CombustivelAtual { get; set; }
 
+        public void Abastecer(int litros)
+        {
+            if((Capacidade - CombustivelAtual) > litros)
+            {
+                CombustivelAtual += litros;
+            }else {
+                CombustivelAtual += (Capacidade - CombustivelAtual);
+            }
+        }
+
+
+        public int Rodar()
+        {
+            Random NumAleatorio = new Random();
+            int Consumo;
+            if(CombustivelAtual != 0)
+            {
+                Consumo = NumAleatorio.Next(1, CombustivelAtual);
+                CombustivelAtual -= Consumo;
+            }else
+            {
+                Consumo = CombustivelAtual;
+            }
+
+            return Consumo;
+        }
+
+        public int Contar()
+        {
+            return CombustivelAtual;
+        }
 
 
     }

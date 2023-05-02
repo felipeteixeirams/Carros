@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Carros.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230427023245_Projeto001")]
-    partial class Projeto001
+    [Migration("20230427183338_CreateDBCarros")]
+    partial class CreateDBCarros
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

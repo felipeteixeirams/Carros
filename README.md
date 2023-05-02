@@ -16,7 +16,7 @@
     <li>Contar❌</li>
 </ul>
 
-<h2> 2° -  crie uma classe chamada Principal, que:</h2>
+<h2> 2° -  crie uma classe chamada Principal, que:✔️</h2>
 <ul>
     <li>Cria três carros de portadores quaisquer diferentes.❌</li>
     <li>Com capacidade para 50, 55 e 40 litros respectivamente, todas com quantidades informadas pelo usuário.❌</li>

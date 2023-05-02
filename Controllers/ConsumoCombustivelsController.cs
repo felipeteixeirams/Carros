@@ -7,18 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Carros.Data;
 using Carros.Models;
+using System.Composition;
 
 namespace Carros.Controllers
 {
-
-    public class Principal
-    {
-        public Principal()
-        {
-
-        }
-    }
-
     public class ConsumoCombustivelsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -31,9 +23,18 @@ namespace Carros.Controllers
         // GET: ConsumoCombustivels
         public async Task<IActionResult> Index()
         {
-              return _context.ConsumoCombustivel != null ? 
-                          View(await _context.ConsumoCombustivel.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.ConsumoCombustivel'  is null.");
+            try
+            {
+                return _context.ConsumoCombustivel.First() != null ?
+                      View(await _context.ConsumoCombustivel.ToListAsync()) :
+                      Problem($"Entity set 'ApplicationDbContext.ConsumoCombustivel'  is null.");
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return RedirectToAction("Create", "Principal");
+            }
         }
 
         // GET: ConsumoCombustivels/Details/5
