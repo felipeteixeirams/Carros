@@ -1,82 +1,43 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Carros.Data;
+using Carros.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Carros.Controllers
 {
     public class PrincipalController : Controller
     {
-        // GET: PrincipalController
-        public ActionResult Index()
+
+        private readonly ApplicationDbContext _context;
+
+        public PrincipalController(ApplicationDbContext context)
         {
-            return View();
+            _context = context;
         }
-        // GET: PrincipalController/Details/5
-        public ActionResult Details(int id)
+
+
+        // GET: Principal/Create
+        public IActionResult Create()
         {
             return View();
         }
 
-        // GET: PrincipalController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: PrincipalController/Create
+        // POST: Principal/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create([Bind("NumeroDeSerie,Capacidade,Portador,CombustivelAtual")] ConsumoCombustivel consumoCombustivel)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                _context.Add(consumoCombustivel);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "ConsumoCombustivels");
             }
-            catch
-            {
-                return View();
-            }
+            return View(consumoCombustivel);
         }
 
-        // GET: PrincipalController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: PrincipalController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: PrincipalController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: PrincipalController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
