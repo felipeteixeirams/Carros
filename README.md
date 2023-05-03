@@ -1,28 +1,31 @@
-<h1>Desafio Consumo de Combustivel</h1>
-
+<h1>Sistema de Controle de Consumo de Combustível</h1>
+<dd><em>Desafio Infortech.</em></dd>
 <p><img src="/Extras/Animation.gif" width="100%" /></p>
     
-<h2> 1° -  Crie uma classe chamada Consumo Combustível, com: ✔️</h2>
-<p><strong>Propriedades</strong></p>
+<h2>O Sistema deve contar com as seguinte estrutura:</h2>
+<p><strong>Uma Classe chamada Consumo Combustível, contendo:</strong></p>
 <ul>
+    <li>PROPRIEDADES</li>
     <li>Número de série ✔️</li>
     <li>Capacidade ✔️</li>
     <li>Portador ✔️</li>
 </ul>
-<p><strong>Métodos</p></strong>
+<p><strong></p></strong>
 <ul>
+    <li>MÉTODOS</li>
     <li>Abastecer✔️</li>
     <li>Rodar✔️</li>
     <li>Contar✔️</li>
 </ul>
-
-<h2> 2° -  crie uma classe chamada Principal, que:✔️</h2>
+<br>
+<p><strong>Uma segunda Classe chamada Principal, contendo:</strong></p>
 <ul>
-    <li>Cria três carros de portadores quaisquer diferentes.❌</li>
-    <li>Com capacidade para 50, 55 e 40 litros respectivamente, todas com quantidades informadas pelo usuário.❌</li>
+    <li>LÓGICA</li>
+    <li>Cria três carros de portadores quaisquer diferentes.🔃</li>
+    <li>Com capacidade para 50, 55 e 40 litros respectivamente, todas com quantidades informadas pelo usuário.🔃</li>
 </ul>
-
-<h2> 3° -   Crie uma camada de persistência para a classe Consumo Combustível com:✔️ </h2> 
+<br>
+<p><strong>Crie uma camada de persistência para a classe Consumo Combustível com:</strong></p>
 <ul>
     <li>Incluir ✔️</li>
     <li>Alterar ✔️</li>
@@ -34,8 +37,10 @@
     <liLinguagem C#</li>
     <li>ASP.NET Core MVC</li>
     <li>SQL Server</li>
-    <li>ORM Entity framework</li>
-    <li>HTML, Razor, Bootstrap</li>
+    <li>Entity framework</li>
+    <li>Razor Pages</li>
+    <li>Bootstrap - CSS</li>
+    <li>HTML</li>
 </ul>
 
 <dd><em>Criado por: <a target="_blank" href="https://www.linkedin.com/in/felipeteixeirams">Felipe</a> 👨‍💻</em><dd>
