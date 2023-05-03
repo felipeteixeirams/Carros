@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />
+    <Content Remove="Views\Principal\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
