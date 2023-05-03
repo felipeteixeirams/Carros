@@ -11,9 +11,9 @@
 </ul>
 <p><strong>Métodos</p></strong>
 <ul>
-    <li>Abastecer❌</li>
-    <li>Rodar❌</li>
-    <li>Contar❌</li>
+    <li>Abastecer✔️</li>
+    <li>Rodar✔️</li>
+    <li>Contar✔️</li>
 </ul>
 
 <h2> 2° -  crie uma classe chamada Principal, que:✔️</h2>
